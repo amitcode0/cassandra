@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Management</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>User Management</h1>
+      <p class="subtitle">Manage your users with ease</p>
+    </header>
+
+    <div class="form-section">
+      <h2>Add New User</h2>
+      <form id="userForm">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter full name" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter email address" required />
+        </div>
+        <div class="form-actions">
+          <button type="submit" id="submitBtn">Add User</button>
+          <button type="reset" class="reset-btn">Clear</button>
+        </div>
+      </form>
+      <div id="loadingSpinner" class="loading-spinner" style="display: none;">
+        <div class="spinner"></div>
+      </div>
+    </div>
+
+    <div class="users-section">
+      <h2>Users List</h2>
+      <div id="userList" class="user-list"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
